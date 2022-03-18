@@ -148,10 +148,7 @@ const MeetingsContainer = () => {
                 );
               })}
             </select>
-
-            <pre>sss{JSON.stringify(touched, null, 2)}</pre>
             <p>{Object.keys(errors).length ? "There are errors " : null}</p>
-
             <button
               type="button"
               onClick={toggleMeetRoomChooser}
