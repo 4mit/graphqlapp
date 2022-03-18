@@ -51,6 +51,6 @@
     "styled-components": "^5"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.16"
+    "@types/styled-components": "^5.1.24"
   }
 }
