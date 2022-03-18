@@ -24,7 +24,7 @@ const MeetingsContainer = () => {
   const [meetingRoom, setmeetingRoom] = useState<any>([]);
   const [toggleMeetingRoom, setToggle] = useState(false);
 
-  const [addTodo, { data, loading: loadinMeetSave, error: errMeetSave }] =
+  const [addMeeting, { data, loading: loadinMeetSave, error: errMeetSave }] =
     useMutation(SAVE_MEETING);
 
   const { loading, data: buildings } = useQuery(GET_ALL_BUILDINGS, {
@@ -90,7 +90,7 @@ const MeetingsContainer = () => {
             endTime: values.endTime,
             meetingRoomId: Number(values.meetingRoomId),
           };
-          addTodo({ variables: { ...body } });
+          addMeeting({ variables: { ...body } });
         }}
       >
         {({
