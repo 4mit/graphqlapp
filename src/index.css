@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+#root {
+  font-family: "Hubballi", cursive;
+  margin: 0px auto;
+  max-width: 400px;
+  border: 1px solid grey;
+  padding: 0rem 0.5rem;
+}
