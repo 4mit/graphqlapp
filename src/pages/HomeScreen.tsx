@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
 import { INITIAL_SCREEN_DATA } from "../constant/queries";
@@ -15,7 +14,6 @@ const HomeScreenWrapper = styled.div`
 `;
 
 const HomeScreen = () => {
-  const loader = useRef(null);
   const {
     loading,
     error,
@@ -43,7 +41,6 @@ const HomeScreen = () => {
           <Link to="/add-meeting">Add a meeting</Link>
         </BlockButton>
       </HomeScreenWrapper>
-      <div className="loading" ref={loader}></div>
     </>
   );
 };
